@@ -8,5 +8,5 @@ type CreateProductRequest struct {
 
 type UpdateProductRequest struct {
 	Title string `json:"title" gorm:"type: varchar(255)"`
-	Price int    `json:"price" gorm:"type: varchar(255)"`
+	Price int    `json:"price" gorm:"type: int"`
 }
