@@ -5,7 +5,7 @@ import "time"
 type Product struct {
 	ID        int       `json:"id" gorm:"PRIMARY_KEY"`
 	Title     string    `json:"title" form:"title" gorm:"type: varchar(255)"`
-	Price     int       `json:"price" form:"price" gorm:"type: int"`
+	Price     int       `json:"price" form:"price" gorm:"type: varchar(255)"`
 	Image     string    `json:"image"  form:"image" gorm:"type: varchar(255)"`
 	CreatedAt time.Time `json:"-"`
 	UpdatedAt time.Time `json:"-"`
